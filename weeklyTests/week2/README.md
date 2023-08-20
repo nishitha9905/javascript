@@ -11,5 +11,5 @@ then to play the sound which clicking on the image i have used javascript
 like i have create a variable called audio with new audio() which is built in audio function in javascript
 to the variable audio i have tried to attach a src url of the mp3 file 
 
-hosted url - 
+hosted url - https://nishitha9905.github.io/javascript/weeklyTests/week2/week2.html
 video url  - ../../assets/videoexp.mp4
