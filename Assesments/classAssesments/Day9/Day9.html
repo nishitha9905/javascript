@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+    </head>
+    <body id="bcolor" style="text-align: center;margin-top: 30px;">
+<div >
+        <label for="color">Choose a color:</label>
+        <select name="color" id="color" onclick="setFontColor(this)">
+            <option value="purple">purple</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+    <br/><br/>
+<div >
+    <label for="bgcolor">Choose a Background-color:</label>
+<select name="bgcolor" id="bgcolor" onclick="setBackgroundColor(this)">
+    <option value="white">White</option>
+    <option value="pink">pink</option>
+    <option value="rgb(255, 165, 0)">yellow</option>
+    <option value="grey">grey</option>
+</select>
+</div>
+<br/><br/>
+<div >
+    <label for="padding">Choose a padding:</label>
+<select name="padding" id="padding" onclick="setBodyPadding(this)">
+    <option value="10px">10px</option>
+    <option value="20px">20px</option>
+    <option value="30px">30px</option>
+    <option value="40px">40px</option>
+</select>
+</div>
+<br/><br/>
+
+<div >
+    <label for="font-size">Choose a font size:</label>
+<select name="font-size" id="font-size" onclick="setFontSize(this)">
+    <option value="12">12px</option>
+    <option value="14">14px</option>
+    <option value="16">16px</option>
+    <option value="18">18px</option>
+</select>
+</div>
+<br/><br/>
+<div >
+    <label for="font-weight">Choose a font weight:</label>
+<select name="font-weight" id="font-weight" onclick="setFontWeight(this)">
+    <option value="500">500px</option>
+    <option value="600">600px</option>
+    <option value="700">700px</option>
+    <option value="800">800px</option>
+</select>
+</div>
+
+
+<script type="text/javascript">
+
+   var setBackgroundColor = function (bgcolor) {
+            document.getElementById(
+                "bcolor").style.backgroundColor
+                        = bgcolor.value;
+        }
+    var setBodyPadding = function (padding){
+        document.getElementsByTagName("div")[0].style.padding 
+                        = padding.value;
+        document.getElementsByTagName("div")[1].style.padding 
+                        = padding.value;
+        document.getElementsByTagName("div")[2].style.padding 
+                        = padding.value;
+        document.getElementsByTagName("div")[3].style.padding 
+                        = padding.value;
+        document.getElementsByTagName("div")[4].style.padding 
+                        = padding.value;               
+    }
+    var setFontColor = function (color){
+        document.getElementsByTagName("label")[0].style.color 
+                     = color.value;
+        document.getElementsByTagName("label")[1].style.color 
+                     = color.value;
+        document.getElementsByTagName("label")[2].style.color 
+                     = color.value;
+        document.getElementsByTagName("label")[3].style.color 
+                     = color.value;
+        document.getElementsByTagName("label")[4].style.color 
+                     = color.value;
+    }
+    var setFontSize = function (fontSize){
+        document.getElementsByTagName("label")[0].style.fontSize 
+                     = fontSize.value;
+        document.getElementsByTagName("label")[1].style.fontSize 
+                     = fontSize.value;
+        document.getElementsByTagName("label")[2].style.fontSize 
+                     = fontSize.value;
+        document.getElementsByTagName("label")[3].style.fontSize 
+                     = fontSize.value;
+        document.getElementsByTagName("label")[4].style.fontSize 
+                     =fontSize.value;
+    }
+    var setFontWeight = function (fontWeight){
+        document.getElementsByTagName("label")[0].style.fontWeight 
+                     = fontWeight.value;
+        document.getElementsByTagName("label")[1].style.fontWeight 
+                     = fontWeight.value;
+        document.getElementsByTagName("label")[2].style.fontWeight 
+                     = fontWeight.value;
+        document.getElementsByTagName("label")[3].style.fontWeight 
+                     = fontWeight.value;
+        document.getElementsByTagName("label")[4].style.fontWeight 
+                     =fontWeight.value;
+    }
+
+</script>
+    </body>
+
+</html>
