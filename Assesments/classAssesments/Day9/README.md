@@ -11,5 +11,6 @@ when user selects particular value ,it will be sent to the function using this k
 when we want to manipulate multiple elements at a time i have used a keyword called getElementsByTagName and done similar process as like id 
 
 
-github hosted link - 
-github repository link - 
+github hosted link - https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day9/Day9.html
+
+github repository link - https://github.com/nishitha9905/javascript
