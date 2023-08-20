@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>The Drum Kit</title>
+    </head>
+    <body style="background-color: rgb(79, 9, 58);">
+        <h1 style="color:white;text-align: center;margin-top: 50px;font-family:Georgia, 'Times New Roman', Times, serif;">The Drum Kit</h1>
+        <div  style="display: flex; flex-direction: row;justify-content: space-evenly;align-content: center;margin-top: 150px;">
+            <button id="btn" onclick="audio.play();" style="background-color: rgb(78, 78, 109);">
+                <img src="../../assets/w.png" alt="w" width="150" height="150" type="button" id="my-button"  />
+            </button>
+            <button id="btn" onclick="audio.play();" style="background-color: rgb(78, 78, 109);" >
+                <img src="../../assets/a.png" alt="a" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            <button id="btn" onclick="audio.play();"style="background-color: rgb(78, 78, 109);" >
+                <img src="../../assets/d.png" alt="d" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            <button id="btn" onclick="audio.play();" style="background-color: rgb(78, 78, 109);">
+                <img src="../../assets/s.png" alt="s" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            <button id="btn" onclick="audio.play();" style="background-color: rgb(78, 78, 109);">
+                <img src="../../assets/j.png" alt="j" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            <button id="btn" onclick="audio.play();" style="background-color: rgb(78, 78, 109);">
+                <img src="../../assets/k.png" alt="k" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            <button id="btn" onclick="audio.play();"style="background-color: rgb(78, 78, 109);" >
+                <img src="../../assets/l.png" alt="l" width="150" height="150" type="button" id="my-button"/>
+            </button>
+            
+        </div>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "../../assets/horse.ogv"
+        </script>
+
+    </body>
+</html>
