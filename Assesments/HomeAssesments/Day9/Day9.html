@@ -1,0 +1,17 @@
+<html >
+    <head>
+        <title>Dynamic web page</title>
+    </head>
+    <body style="text-align: center;">
+        <h1 style="color:violet;font-size: 26px;font-weight: 600;">Add Paragraph Text Dynamically</h1>
+        <button type="button" onclick="addParagraph()" style="background-color: chocolate;color: whitesmoke; width: 200px;padding:10px;border: none;border-radius: 5px;font-weight: 600;">Add New Paragraph</button>
+        <div id="Paragraph"></div>
+    </body>
+    <script type="text/javascript">
+       const addParagraph = () => {
+        const newElem = document.createElement("p");
+        newElem.append("This is a new Paragraph")
+        document.getElementById("Paragraph").append(newElem);
+       }
+    </script>
+</html>
