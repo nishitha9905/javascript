@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekster Change shape and Color</title>
+    <link rel="stylesheet" href="./Day10.css">
+</head>
+<body>
+    <div id="container">
+        <div id="circle">
+            <div class="inner"></div>
+        </div>
+
+        <div id="change-color">
+            <button>Change Color</button>
+        </div>
+
+        <div id="change-shape">
+            <button>Change shape</button>
+        </div>
+    </div>
+
+    <script >
+        var color = [
+  "red","green","cyan","black",
+  "voilet","blue","yellow","purple",
+  "orange","lightgreen","lemon",
+];
+var index = 0;
+var isTriangle = false;
+
+var cShape = document.getElementById("change-shape");
+var cColor = document.getElementById("change-color");
+
+cShape.addEventListener("click", changeShape);
+cColor.addEventListener("click", changeColor);
+
+function changeColor() {
+  if (index === color.length) {
+    index = 0;
+  }
+  document.getElementById("circle").style.backgroundColor = color[index];
+  index++;
+}
+
+function changeShape() {
+  if (!isTriangle) {
+    var i = document.getElementsByClassName("inner")[0];
+    i.className = "triangle-bottom-left";
+    isTriangle = true;
+  }else{
+    var i = document.getElementsByClassName("triangle-bottom-left")[0];
+    i.className = "inner";
+    isTriangle = false;
+  }
+}
+    </script>
+</body>
+</html>
