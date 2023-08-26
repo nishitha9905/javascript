@@ -13,8 +13,8 @@ and assigning all the color in a sequential manner by incrementing the index val
 once the index value is equal to color.length then index value will be reassigned to 0
 
 
-hosted url -- 
-github url -- 
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day10/Day10.html
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day10/Day10.html
 
 
 
