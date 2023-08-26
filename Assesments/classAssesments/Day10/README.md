@@ -14,6 +14,8 @@ once the index value is equal to color.length then index value will be reassigne
 
 
 hosted url -- https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day10/Day10.html
+
+
 github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day10/Day10.html
 
 
