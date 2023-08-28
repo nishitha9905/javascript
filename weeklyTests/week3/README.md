@@ -28,8 +28,8 @@ so that it removes last drawing which drawn by user
 
 when the user wants to delete the complete action then empty object variable 
 
-hosted url --- 
+hosted url --- https://nishitha9905.github.io/javascript/weeklyTests/week3/week3.html
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/weeklyTests/week3/week3.html
 
