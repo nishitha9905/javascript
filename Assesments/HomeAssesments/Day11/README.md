@@ -16,6 +16,6 @@ display value will be none initially in the html code and with the dom manipulat
 hosted url - https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day11/Day11.html
 
 
-github repo url - https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day11/Day11.htmlsssss
+github repo url - https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day11/Day11.html
 
 
