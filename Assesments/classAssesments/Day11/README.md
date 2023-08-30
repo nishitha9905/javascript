@@ -9,7 +9,7 @@ i have hidden the ui with ui style display none
 - and the ascii character ui has been shown with the respective key value ,which the user pressed
 
 
-github repo url - 
+github repo url - https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day11/Day11.html
 
 
-hosted url - 
+hosted url - https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day11/Day11.html

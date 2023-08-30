@@ -13,9 +13,9 @@ intially the ui for the tip amount has been created and made it displayed only w
 display value will be none initially in the html code and with the dom manipulation it has been modified to inline when the tipamount has been calculated with the given values
 
 
-hosted url - 
+hosted url - https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day11/Day11.html
 
 
-github repo url - 
+github repo url - https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day11/Day11.htmlsssss
 
 
