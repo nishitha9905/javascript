@@ -9,8 +9,8 @@ total characters is updated with the textarea(Id of the textarea).value.length
 remaining characters is updated with the 
 textarea(id of the textarea).getAttribute("maxLength") - textarea(id of the textarea).value.length
 
-github repo link -- 
+github repo link -- https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day12/Day12.html
 
 
 
-hosted link -- 
+hosted link -- https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day12/Day12.html

@@ -12,8 +12,8 @@ the document should be accepted either enter key or add note button as same so i
 the option del has been given which will be deleted all the notes which has been entered by the user in past
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day12/Day12.html
 
 
 
-hosted url --
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day12/Day12.html
