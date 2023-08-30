@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Events</title>
+  </head>
+  <body style="margin-top:150px">
+    <div id="keyboard-press" style="background-color: white;box-shadow: 1px 1px 2px 2px grey;color:black;text-align: center;width: 500px;margin: auto;padding: 5px;">
+        <h1 id="onchange-key">Press Any KeyBoard key</h1>
+    </div>
+    
+    <div id="event-press" style="background-color: white;border:1px solid gainsboro;color:rgb(35, 227, 211);text-align: center;width: 100px;margin: auto;padding:15px;font-size: 24px;border-radius: 5px;margin-top: 50px;display: none;">
+        <h1 id="event-key"></h1>
+    </div>
+    <script>
+        var keypress = document.getElementById("onchange-key")
+        var eventKey = document.getElementById("event-key")
+        var eventPress = document.getElementById("event-press")
+        document.addEventListener('keypress', function(event){
+console.log("============13",event);
+
+    keypress.innerText = `You Pressed ${event.code}`
+    eventKey.innerText = event.keyCode
+    eventPress.style.display = "grid"
+});
+    </script>
+</body>
+</html>
