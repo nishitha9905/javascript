@@ -9,7 +9,7 @@ and called a function which helps me to update box position value every time
 based on the position of the box returned every time left and top values of the box where updated
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day13/Day13.html
 
 
-hosted url -- 
+hosted url- https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day13/Day13.html

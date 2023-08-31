@@ -5,10 +5,10 @@ and from the date value as we can get month day date year time (also if required
 can be displayed each value as per our requirement in html tags 
 using dom manipulation
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day13/Day13.html
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day13/Day13.html
 
 
 
