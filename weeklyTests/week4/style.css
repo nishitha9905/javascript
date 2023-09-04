@@ -88,6 +88,15 @@ body{
     justify-content: space-between;
     align-content: center;
     background-color: white;
+    height:350px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.right-side-2{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
     height:380px;
     border-radius: 10px;
     margin-top: 20px;
