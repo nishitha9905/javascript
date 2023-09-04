@@ -88,24 +88,12 @@ body{
     justify-content: space-between;
     align-content: center;
     background-color: white;
-    height:350px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-.right-side-2{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    background-color: white;
-    height:380px;
+    height:auto;
     border-radius: 10px;
     margin-top: 20px;
 }
 .main-text{
     margin-left:5px;
-}
-.main-text-2{
-    text-align: left;
 }
 .props-div{
     margin-left: 228px;
