@@ -14,7 +14,7 @@ this has been done by fetching api url in the try catch block ,using map functio
 
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/weeklyTests/week4/week4.html
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/weeklyTests/week4/week4.html
