@@ -11,7 +11,7 @@ Task given is to search any kind of images in the search box
 
 
 
---github repo url  https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day14/Day14.html
+--github repo url  https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day15/Day15.html
 
 
 
