@@ -12,8 +12,8 @@ then if the hours value is greater than 12 then it should be subracted by 12
 and fetch the "PM" string in the end of clock 
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day14/Day14.html
 
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day14/Day14.html

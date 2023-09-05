@@ -9,9 +9,9 @@ required with the search icon and search button
 --ui has been designed with the api call when the response has been given with the api call 
 --with the dom manipulation the ui has been designed and the details has been displayed accordingly
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/MainProjects/GithubFinder/GithubFinder.html
 
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/MainProjects/GithubFinder/GithubFinder.html
 
