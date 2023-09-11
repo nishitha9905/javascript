@@ -6,8 +6,8 @@ The task given is to fetch all the user details which are been entered by the us
 -local storage is used to store the data which has been entered by the user previously and can be shown in the ui part
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/classAssesments/Day16/Day16.html
 
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/classAssesments/Day16/Day16.html

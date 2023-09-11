@@ -6,7 +6,7 @@ and when the text has been entered into the textarea then the event listner "inp
 and then for every page refreshing...if localstorage.getItem() value is not null or having some content it will be fetched in to the ui part
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/Assesments/HomeAssesments/Day16/Day16.html
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/Assesments/HomeAssesments/Day16/Day16.html
