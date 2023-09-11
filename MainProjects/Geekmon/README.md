@@ -7,7 +7,7 @@ the cards will be aligned accordingly with some css styles
 By default all the cards will be displayed in the page without any filter applied
 
 
-github repo url --
+github repo url --  https://github.com/nishitha9905/javascript/blob/main/MainProjects/Geekmon/Geekmon.html
 
 
-hosted url --
+hosted url -- https://nishitha9905.github.io/javascript/MainProjects/Geekmon/Geekmon.html

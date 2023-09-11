@@ -14,8 +14,8 @@ if there is no month & year selected by the user current month ,year and date wi
 
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/weeklyTests/week5/CalendarProject.html
 
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/weeklyTests/week5/CalendarProject.html

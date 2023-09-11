@@ -21,8 +21,8 @@ window.localstorage - has been used as temporary database to store the details p
 
 
 
-github repo url -- 
+github repo url -- https://github.com/nishitha9905/javascript/blob/main/MainProjects/UserAuthentication/UserAuthentication.html
 
 
 
-hosted url -- 
+hosted url -- https://nishitha9905.github.io/javascript/MainProjects/UserAuthentication/UserAuthentication.html
