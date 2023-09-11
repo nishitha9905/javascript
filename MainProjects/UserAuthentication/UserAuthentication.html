@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>User Authentication</title>
+        <style>
+            .loginRegister-page{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .login-page,.register-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            input {
+                padding:10px;
+                width:300px;
+            }
+            button{
+                padding:10px;
+                width:200px;
+                background-color: rgb(30, 146, 86);
+                color:white;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                margin-left: 50px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+            }
+            
+        </style>
+    </head>
+    <body id="body">
+        <div class="loginRegister-page">
+            <div class="login-page">
+                <h1>LOGIN</h1>
+                <div id="display-login-error"></div>
+                <input id="login-email" type="email" placeholder="email/Username" value=""/><br/><br/>
+                <input id="login-password" type="password" placeholder="password" value=""/><br/><br/>
+                <a href="./forgotPswd.html" id="forgot-pswd">Forgot Password?</a>
+                <button class="login">LOGIN</button>
+            </div>
+            <div class="register-page">
+                <h1>REGISTER</h1>
+                <div id="display-error"></div>
+                <input type="text" placeholder="Username" id="user-name" value=""/><br/><br/>
+                <input type="email" placeholder="Email Address" id="register-email" value=""/><br/><br/>
+                <input type="password" placeholder="password" id="register-password" value=""/><br/><br/>
+                <button class="register">REGISTER</button>
+            </div>
+        </div>
+        <script>
+           const loginbtn = document.getElementsByClassName("login");
+           const registerbtn = document.getElementsByClassName("register")  
+           const body = document.getElementById("body");
+           const displayError = document.getElementById("display-error")
+           const displayLoginError = document.getElementById("display-login-error");
+           const response = registerbtn[0].addEventListener("click" ,async function () {
+              const rEmail = document.getElementById("register-email").value;
+              const rPassword = document.getElementById("register-password").value;
+              const userName = document.getElementById("user-name").value;
+              console.log(rEmail , rPassword,userName)
+              fetch('https://geek-store.onrender.com/user/register', {
+            method: 'POST',
+            body: JSON.stringify({
+                "name" :userName,
+                "password" : rPassword,
+                "email":rEmail
+            }),
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          }).then (response =>{
+            if(response.status == 200 ){
+                body.innerText = "User Registered Successfully"
+            }
+            else {
+                displayError.innerText = "Email or username or password is missing"
+                displayError.style.color = "red" 
+            }
+
+        })
+          
+           })
+           
+           loginbtn[0].addEventListener("click", async function () {
+            const lEmail = document.getElementById("login-email").value
+           const lPassword = document.getElementById("login-password").value;
+            fetch('https://geek-store.onrender.com/user/login', {
+            method: 'POST',
+            body: JSON.stringify({
+                "email":lEmail,
+                "password":lPassword,
+                "role":"customer"
+            }),
+            headers: {
+              'Content-type': 'application/json',
+            }
+          }).then (response =>{
+            if(response.status == 200 ){
+                body.innerText = "User Loggedin Successfully"
+            }
+            else if(response.status == 401){
+                displayLoginError.innerText = "User not found"
+                displayLoginError.style.color = "red" 
+            }
+            else if(response.status == 400){
+                displayLoginError.innerText = "Email or password is missing"
+                displayLoginError.style.color = "red" 
+            }
+
+        })
+           })
+        </script>
+    </body>
+</html>

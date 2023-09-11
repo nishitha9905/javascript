@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Forgot password</title>
+        <style>
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                width:300px;
+                margin-left: 470px;
+            }
+            input {
+                padding:10px;
+                margin:10px;
+            }
+            button{
+                padding:10px;
+                background-color: darkgreen;
+                width:250px;
+                border:none;
+                border-radius: 5px;
+                color: white;
+                margin-left: 25px;
+                font-weight: 700;
+            }
+            h1{
+                margin-left: 40px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+            #forgot-password{
+                display: none;
+                width:100%;
+                margin-left: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="forgot-password">
+            <p >Your OTP is successfully sent to the registered email id.</p>
+            <button id="reset-password" ><a href="./resetpswd.html" style="text-decoration: none;color:white">Reset password</a></button>
+        </div>
+        <div id="forgot-password2">
+            <h1 >Reset Password</h1>
+            <div id="forgot-pswd"></div>
+            <input id="email" type="email" placeholder="Enter your Email" value="" /><br/><br/>
+            <button id="button" >Get Link For New password</button>
+        </div>
+        <script>
+            const button = document.getElementById("button");
+            const forgotPassword = document.getElementById("forgot-password");
+            const forgotPassword2 = document.getElementById("forgot-password2");
+            const forgotPswd = document.getElementById("forgot-pswd")
+            const resetPassword = document.getElementById("reset-password")
+            button.addEventListener("click",async function () {
+                const email = document.getElementById("email").value;
+                console.log(email);
+              window.fetch('https://geek-store.onrender.com/user/forgot-password', {
+            method: 'POST',
+            body: JSON.stringify({
+                "email":email
+            }),
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          }).then (response => {
+            if(response.status == 201){
+               forgotPassword.style.display = "block"
+               forgotPassword2.style.display = "none";
+            }
+            else if(response.status == 401){
+                forgotPswd.innerText = "User not found"
+                forgotPswd.style.color = "red" 
+            }
+            else if(response.status == 400){
+                forgotPswd.innerText = "Email or password is missing"
+                forgotPswd.style.color = "red"
+            }
+          })
+            })
+        </script>
+    </body>
+</html>

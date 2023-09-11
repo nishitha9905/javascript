@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>reset password</title>
+        <style>
+            #reset-password {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                width:300px;
+                margin-left: 470px;
+            }
+            input {
+                padding:10px;
+                margin:10px;
+            }
+            button{
+                padding:10px;
+                background-color: darkgreen;
+                width:250px;
+                border:none;
+                border-radius: 5px;
+                color: white;
+                margin-left: 25px;
+                font-weight: 700;
+            }
+            h1{
+                margin-left: 40px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="reset-password">
+            <h1>Reset Password</h1>
+            <input type="email" id="email" placeholder="Enter EmailId" value=""/>
+            <input type="phone" id="otp" placeholder="OTP" value=""/>
+            <input type="password" id="pswd" placeholder="Enter New Password" value="" />
+            <button id="reset-pswd">Reset Password</button>
+            <div id="reset-pswd-msg"></div>
+        </div>
+        <script>
+            const resetPswd = document.getElementById("reset-pswd");
+            const resetpswdmsg = document.getElementById("reset-pswd-msg");
+            resetPswd.addEventListener("click",async function (){
+                const email = document.getElementById("email").value;
+                const otp = document.getElementById("otp").value;
+                const pswd = document.getElementById("pswd").value;
+                window.fetch('https://geek-store.onrender.com/user/reset-password', {
+            method: 'POST',
+            body: JSON.stringify({
+                "email":email,
+                "otp":otp,
+                "password":pswd
+            }),
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          }).then (response => {
+            if(response.status == 201){ 
+                resetpswdmsg.innerText = "Your Password is updated successfully."
+            }
+            else if(response.status == 401){
+                resetpswdmsg.innerText = "User not found"
+                resetpswdmsg.style.color = "red" 
+            }
+            else if(response.status == 400){
+                resetpswdmsg.innerText = "Email or password or otp is missing"
+                resetpswdmsg.style.color = "red"
+            }
+          })
+            })
+        </script>
+       
+    </body>
+</html>
