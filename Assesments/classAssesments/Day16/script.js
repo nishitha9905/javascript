@@ -1,10 +1,7 @@
-// Check if user information is already stored in local storage
 const storedUserInfo = localStorage.getItem("userInformation");
 
 if (storedUserInfo) {
     const userInfo = JSON.parse(storedUserInfo);
-
-    // Display user information in the card
     document.getElementById("first-name").textContent = userInfo.firstName;
     document.getElementById("last-name").textContent = userInfo.lastName;
     document.getElementById("country").textContent = userInfo.country;
@@ -14,7 +11,6 @@ if (storedUserInfo) {
     document.getElementById("village").textContent = userInfo.village;
 }
 
-// Function to store user information in local storage
 function storeUserInfo() {
     const firstName = prompt("Enter your first name:");
     const lastName = prompt("Enter your last name:");
@@ -34,10 +30,8 @@ function storeUserInfo() {
         village,
     };
 
-    // Store user information in local storage as a JSON string
     localStorage.setItem("userInformation", JSON.stringify(userInfo));
 
-    // Display user information in the card
     document.getElementById("first-name").textContent = userInfo.firstName;
     document.getElementById("last-name").textContent = userInfo.lastName;
     document.getElementById("country").textContent = userInfo.country;
@@ -47,5 +41,4 @@ function storeUserInfo() {
     document.getElementById("village").textContent = userInfo.village;
 }
 
-// Call the function to store user information
 storeUserInfo();
